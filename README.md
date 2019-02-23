@@ -2,18 +2,18 @@
 
 ### Infra for DevOps [Exam](exam/exam.md)
 
-###Technologies
+### Technologies
 - [Docker](https://www.docker.com/)
 - [Concourse CI](https://concourse-ci.org/)
 - [Terraform](https://www.terraform.io/)
 
-###Tasks done:
+### Tasks done:
 - [x] Application and base pipeline (20 points)
 - [x] Metrics (20 points)
 - [x] Docker (10 points)
 - [x] DevOps Theory (10 points)
 
-###Setup
+### Setup
 - Create an account on following websites
     - [Github](https://github.com/)
     - [Heroku](https://www.heroku.com/)
@@ -54,7 +54,7 @@
 
 - If running for the first time, delete terraform.tfstate file
 
-###Application and base pipeline
+### Application and base pipeline
 
 ![pipeline.PNG](img/pipeline.PNG)
   
@@ -67,7 +67,7 @@
     - When infra job is finished, either start build job manually, or make a commit to the app repo to trigger the build
     - Wait for build to finish, and open the ci app in Heroku
 
-####Infrastructure    
+#### Infrastructure    
 - The application is hosted on Heroku in 3 environments: CI, Staging and Production
 - Environments have the same infrastructure (Environment Parity)
 - Deployment from the CI environment to Stage and production can be done manually by promoting the application in the Heroku dashboard
@@ -76,7 +76,7 @@
 ![pipeline.PNG](img/statuscake.PNG)
 
 
-###Metrics 
+### Metrics 
 
 | Type          | Name                 | Endpoint    |     
 |:-------------:| ---------------------|:------------------------------------:|
@@ -91,17 +91,17 @@
 | Gauge         | books count          | `DELETE` `/books/{id}`                 | 
 | Timer         | merge patch book     | `PATCH` `/books/{id}`                  | 
 
-###Docker 
+### Docker 
 
 From app's root directory:
 - Run `mvn clean install`
 - Build an image `docker build --build-arg JAR_FILE=target/book-1.0-SNAPSHOT.jar .`
 - Run image as container `docker run -p 4000:8081 <image id>`
 
-###Devops Theory
+### Devops Theory
 
 
-###Known issues
+### Known issues
     
 - If `Backend error: Exit status: 500... permission denied` occurs, make sure to run `git update-index --chmod=+x file.sh` for all .sh files
 
