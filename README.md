@@ -100,10 +100,45 @@ From app's root directory:
 
 ### Devops Theory
 
+#### III Config
+- An application's config is everything that is likely to change between deploys
+- Twelve-factor app requires strict separation of config from code.
+- Storing configs as constants in the code is a violation of twelve-factor app.
+- Config can be stored in environment variables, or externalised into other tools:
+    - Consul for dynamic configuration.
+    - Vault for secrets management
+- Example: Heroku allows to store config in config-vars, which are exposed to application at runtime
+
+#### X Dev/prod parity
+- The purpose of this factor is to keep development, staging, and production environments as similar as possible
+- By doing this, we are ensuring that following gaps are minimised:
+    - Time between deploys
+    - Personnel gap
+    - Tools gap 
+- Using the same Terraform configuration to provision identical dev, staging and production environments ensures environment parity
+- Example: 
+    - The [Application](https://github.com/athenus-rufus/exam-app) is hosted in 3 environments on Heroku
+    - Each environment has the same infrastructure
+
+#### XI Logs 
+- Logs provide visibility into the behavior of a running app. 
+- They can be used to find specific event, for graphing of trends and alerting when an error occurs.
+- During local development, log stream can be displayed in the terminal.
+- In staging or production, streams can be sent to a log analysis system.
+- Example: 
+    - Integration of Metrics library from Dropwizard. Following metrics have been demonstrated:
+        - Meter: measure the rate of requests to `/book` endpoint, in requests per second
+        - Counter: measure books available on `POST` (increment) and `DELETE` (decrement) to `/book` endpoint
+        - Histogram: measure changes of  books price on `PATCH` to `/books/{id}/price` endpoint
+        - Gauge: measure the count of all books on `DELETE` to `/book` endpoint
+        - Timer: measure the amount of time it takes to process `PATCH` request to `/books/{id}`
 
 ### Known issues
     
 - If `Backend error: Exit status: 500... permission denied` occurs, make sure to run `git update-index --chmod=+x file.sh` for all .sh files
+
+### References
+- [The Twelve-Factor App](https://12factor.net/)
 
 
 
