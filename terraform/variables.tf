@@ -1,9 +1,9 @@
 # Modify this file to make it your own :-)
 
 variable "app_prefix" {
-  default = "athenus"
+  default = "rufus"
 }
 
 variable "pipeline_name" {
-  default = "athenus-pipeline"
+  default = "rufus-pipeline"
 }
