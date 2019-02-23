@@ -1,13 +1,28 @@
 # PGR301 DevOps Exam
 
-### Infra for DevOps [Exam](exam/exam.md)
+### Table of contents
+
+- [Technologies](#technologies)
+- [Tasks done](#tasks-done)
+- [Setup](#setup)
+- [Application and base pipeline](#application-and-base-pipeline)
+  * [Infrastructure](#infrastructure)
+- [Metrics](#metrics)
+- [Docker](#docker)
+- [Devops Theory](#devops-theory)
+  * [III Config](#iii-config)
+  * [X Dev/prod parity](#x-dev-prod-parity)
+  * [XI Logs](#xi-logs)
+- [Known issues](#known-issues)
+- [Exam](#exam)
+- [References](#references)
 
 ### Technologies
 - [Docker](https://www.docker.com/)
 - [Concourse CI](https://concourse-ci.org/)
 - [Terraform](https://www.terraform.io/)
 
-### Tasks done:
+### Tasks done
 - [x] Application and base pipeline (20 points)
 - [x] Metrics (20 points)
 - [x] Docker (10 points)
@@ -102,10 +117,10 @@ From app's root directory:
 
 #### III Config
 - An application's config is everything that is likely to change between deploys
-- Twelve-factor app requires strict separation of config from code.
-- Storing configs as constants in the code is a violation of twelve-factor app.
+- Twelve-factor app requires strict separation of config from code
+- Storing configs as constants in the code is a violation of twelve-factor app
 - Config can be stored in environment variables, or externalised into other tools:
-    - Consul for dynamic configuration.
+    - Consul for dynamic configuration
     - Vault for secrets management
 - Example: Heroku allows to store config in config-vars, which are exposed to application at runtime
 
@@ -121,10 +136,10 @@ From app's root directory:
     - Each environment has the same infrastructure
 
 #### XI Logs 
-- Logs provide visibility into the behavior of a running app. 
-- They can be used to find specific event, for graphing of trends and alerting when an error occurs.
-- During local development, log stream can be displayed in the terminal.
-- In staging or production, streams can be sent to a log analysis system.
+- Logs provide visibility into the behavior of a running app
+- They can be used to find specific event, for graphing of trends and alerting when an error occurs
+- During local development, log stream can be displayed in the terminal
+- In staging or production, streams can be sent to a log analysis system
 - Example: 
     - Integration of Metrics library from Dropwizard. Following metrics have been demonstrated:
         - Meter: measure the rate of requests to `/book` endpoint, in requests per second
@@ -136,6 +151,9 @@ From app's root directory:
 ### Known issues
     
 - If `Backend error: Exit status: 500... permission denied` occurs, make sure to run `git update-index --chmod=+x file.sh` for all .sh files
+
+### Exam
+Exam can be found [here](exam/exam.md)
 
 ### References
 - [The Twelve-Factor App](https://12factor.net/)
