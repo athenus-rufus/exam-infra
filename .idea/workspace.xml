@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc991857-b77d-4e3d-94a3-6fdd19542d4d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/eksamen.md" beforeDir="false" afterPath="$PROJECT_DIR$/exam/exam.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,12 +49,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eksamen.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exam/eksamen.md">
+      <file leaf-file-name="exam.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exam/exam.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="233">
-                <caret line="104" column="70" selection-start-line="104" selection-start-column="70" selection-end-line="104" selection-end-column="70" />
+              <first_editor relative-caret-position="1479">
+                <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
               </first_editor>
               <second_editor />
             </state>
@@ -65,8 +65,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="290">
-                <caret line="98" column="61" lean-forward="true" selection-start-line="98" selection-start-column="61" selection-end-line="98" selection-end-column="61" />
+              <first_editor relative-caret-position="34">
+                <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
               </first_editor>
               <second_editor />
             </state>
@@ -110,6 +110,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>heroku_app_name</find>
+      <find>gard</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,6 +165,11 @@
               <item name="exam-infra" type="b2602c69:ProjectViewProjectNode" />
               <item name="exam-infra" type="462c0819:PsiDirectoryNode" />
               <item name="concourse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exam-infra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam-infra" type="462c0819:PsiDirectoryNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exam-infra" type="b2602c69:ProjectViewProjectNode" />
@@ -269,12 +275,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550863155395</updated>
-      <workItem from="1550863156624" duration="16407000" />
+      <workItem from="1550863156624" duration="16707000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16407000" />
+    <option name="totallyTimeSpent" value="16707000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -290,10 +296,10 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" weight="0.32921812" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.24362895" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.24362895" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.081808396" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.081808396" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32921812" />
@@ -365,23 +371,6 @@
     <entry file="file://$PROJECT_DIR$/terraform/terraform.tfstate">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/exam/eksamen.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="233">
-            <caret line="104" column="70" selection-start-line="104" selection-start-column="70" selection-end-line="104" selection-end-column="70" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="14" selection-start-line="3" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/terraform/variables.tf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -427,11 +416,28 @@
     <entry file="file://$PROJECT_DIR$/img/pipeline.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/exam/exam.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1479">
+            <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="14" selection-start-line="3" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="290">
-            <caret line="98" column="61" lean-forward="true" selection-start-line="98" selection-start-column="61" selection-end-line="98" selection-end-column="61" />
+          <first_editor relative-caret-position="34">
+            <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
           </first_editor>
           <second_editor />
         </state>
