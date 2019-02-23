@@ -56,7 +56,7 @@
         - `heroku_api_key` with your Heroku API key, found in [heroku dashboard](https://dashboard.heroku.com/account)
         - `github_token` with your Github token
             - Guide to creating a github [personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line)
-        - `heroku_app_name` app-prefix value from terraform variables + -app-ci
+        - `heroku_app_name` same as app-prefix value from terraform variables
         - `statuscake_api_key` with your StatusCake API key found in [statuscake dashboard](https://app.statuscake.com/User.php)
 
 - Terraform variables

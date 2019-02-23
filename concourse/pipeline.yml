@@ -14,7 +14,7 @@ jobs:
     file: monitoring-infra/concourse/heroku/push_master_to_heroku.yml
     input_mapping: {source: monitoring-app}
     params:
-      app_name: ((heroku_app_name))
+      app_name: ((heroku_app_name))-app-ci
       heroku_email: ((heroku_email))
       heroku_api_token: ((heroku_api_key))
 
