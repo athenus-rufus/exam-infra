@@ -4,32 +4,15 @@ resource "heroku_app" "ci" {
   region = "eu"
 }
 
-# Create a database, and configure the app to use it
-resource "heroku_addon" "db_ci" {
-  app  = "${heroku_app.ci.name}"
-  plan = "heroku-postgresql:hobby-dev"
-}
-
 resource "heroku_app" "staging" {
   name   = "${var.app_prefix}-app-staging"
   region = "eu"
 }
 
-# Create a database, and configure the app to use it
-resource "heroku_addon" "db_stage" {
-  app  = "${heroku_app.staging.name}"
-  plan = "heroku-postgresql:hobby-dev"
-}
 
 resource "heroku_app" "production" {
   name   = "${var.app_prefix}-app-production"
   region = "eu"
-}
-
-# Create a database, and configure the app to use it
-resource "heroku_addon" "db_prod" {
-  app  = "${heroku_app.production.name}"
-  plan = "heroku-postgresql:hobby-dev"
 }
 
 resource "heroku_pipeline" "test-app" {
@@ -43,7 +26,6 @@ resource "heroku_pipeline_coupling" "ci" {
   stage    = "development"
 }
 
-# Couple apps to different pipeline stages
 resource "heroku_pipeline_coupling" "staging" {
   app      = "${heroku_app.staging.name}"
   pipeline = "${heroku_pipeline.test-app.id}"
